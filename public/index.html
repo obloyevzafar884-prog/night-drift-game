@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Night Drift</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="hud">
+        <div class="stat">
+          <span>Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="stat">
+          <span>Lives</span>
+          <strong id="lives">3</strong>
+        </div>
+        <div class="stat">
+          <span>Speed</span>
+          <strong id="speed">1.0x</strong>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="960" height="600"></canvas>
+
+      <div id="startScreen" class="overlay visible">
+        <h1>Night Drift</h1>
+        <p>Qolgan yo'lda to'siqlarni chetga chiqarib, uzun masofani bosib o'ting.</p>
+        <p>Start uchun <strong>Space</strong> yoki <strong>Enter</strong> bosing</p>
+      </div>
+
+      <div id="gameOverScreen" class="overlay hidden">
+        <h1>Game Over</h1>
+        <p id="finalScore">Score: 0</p>
+        <p>Qayta boshlash uchun <strong>R</strong> bosing</p>
+      </div>
+    </div>
+
+    <script src="/game.js"></script>
+  </body>
+</html>

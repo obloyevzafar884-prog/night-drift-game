@@ -1,0 +1,12 @@
+{
+  "name": "night-drift-game",
+  "version": "1.0.0",
+  "description": "3D-style car racing game with Node.js and Canvas",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
